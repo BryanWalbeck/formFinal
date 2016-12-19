@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/> 
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+
+<body>
+	<div id="conatiner">
+        <form name="contact" method="get">
+        	<!--company Class-->
+            <div class="company">
+            	<img class="llc" src="img/Logo.jpg" alt="llc" height="100" width="550"/>
+            	<img class="crystals" src="img/Light-Blue-Crystals-12.jpg" alt="crystals" height="100" width="100"/>
+            </div>
+            <!--End Of company Class-->
+            
+            <!--returnDialogue Class-->
+            <div class="returnDialogue">
+            	<p class="pageDescription">Dear Customer,
+                	<br/>
+                    <br/>
+                    &emsp;Thank you for using the Online Returns Form.
+                    <br/>
+                    <br/>
+                    &emsp;Please fill in the required fields below to submit your claim.
+                    <br/>
+                    <br/>
+                    <span class="hot">&emsp;*Required</span>
+                </p>
+            </div>
+            <!--End Of returnDialogue Class-->
+            
+            
+            <br/>
+            
+            
+            <!--loginInfo Class-->
+            <div class="loginInfo">
+                <label class="textEmail"><span class="hot">*</span>User ID/Email:<input 
+                            type="email" id="email" required name="email" 
+                    		placeholder="Email" minlength="2" maxlength="63"
+                            onFocus="currentField()"/>
+                </label>
+                
+                <label class="textPswrd"><span class="hot">*</span>Password:<input 
+                			type="password" id="psword" required name="psword"
+                    		placeholder=" "
+                    		value="" minlength="8"
+                            onFocus="currentField()"/>
+                </label>
+            </div>
+            <!--End Of loginInfo Class-->
+            
+            
+            <br/>
+            
+            
+        	<!--fullName Class-->    
+        	<div class="fullName">   
+                <label class="textFirst"><span class="hot">*</span>First Name:<input 
+                			type="text" id="firstName" name="firstName" 
+                    		placeholder="First Name" minlength="2" 
+                            required onChange="true"
+                            onFocus="currentField()"/>
+                </label>
+                
+                <label class="textMI">MI:<input 
+                			type="text" id="middleInitial" name="middleInitial" 
+                    		placeholder=" " maxlength="1"
+                            onFocus="currentField()"/>
+                </label>
+                
+                <label class="textLast"><span class="hot">*</span>Last Name:<input 
+                			type="text" id="lastName" name="lastName" 
+                    		placeholder="Last Name" minlength="2" 
+                            required onChange="true"
+                    		onFocus="currentField()"/>
+                </label>
+            </div>
+            <!--End Of fullName Class-->
+            
+            
+            <br/>
+            <br/>
+            
+            
+            <!--addressField Class-->    
+        	<div class="addressField">   
+              <label class="textStreet"><span class="hot">*</span>Address:<input 
+                			type="text" id="addressStreet" name="addressStreet" 
+                    		placeholder="Address" minlength="2" 
+                            required onChange="true"
+                            onFocus="currentField()"/>
+                </label>
+                
+                <label class="textApt">Apt#:<input 
+                			type="text" id="addressApt" name="addressApt" 
+                    		placeholder=" "
+                            onFocus="currentField()"/>
+                </label>
+                
+              <label class="textCity"><span class="hot">*</span>City:<input 
+                			type="text" id="addressCity" name="addressCity" 
+                    		placeholder="City" minlength="2" 
+                            required onChange="true"
+                            onFocus="currentField()"/>
+              </label>
+                
+                <br/>
+                <br/>
+                
+                <label class="textState"><span class="hot">*</span>State:<select 
+                		required onChange="true" name="state" id="addressState">
+                        <option value="">**</option>
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AZ">AZ</option>
+                        <option value="AR">AR</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DE">DE</option>
+                        <option value="DC">DC</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="IA">IA</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="ME">ME</option>
+                        <option value="MD">MD</option>
+                        <option value="MA">MA</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MS">MS</option>
+                        <option value="MO">MO</option>
+                        <option value="MT">MT</option>
+                        <option value="NE">NE</option>
+                        <option value="NV">NV</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NY">NY</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WV">WV</option>
+                        <option value="WI">WI</option>
+                        <option value="WY">WY</option>
+                    </select>
+                </label>
+
+                <label class="textZip"><span class="hot">*</span>Zip:<input 
+                			type="text" id="addressZip" name="addressZip" 
+                    		placeholder="12345" maxlength="5" minlength="5" 
+                            required onChange="true"
+                    		onFocus="currentField()"/>
+                </label>
+            </div>
+            <!--End Of addressField Class-->
+            
+            
+            <br/>
+            <br/>
+            
+            
+            <!--productType Class-->
+            <div class="productType">
+            	<span class="hot">*</span>Product Type:<br/>
+                <label class="textBook">
+                    <input type="radio" id="productTypeBook" required name="productType" 
+                            value="Book"/> Book<br/>
+                </label>
+                
+                <label class="textCD">
+                    <input type="radio" id="productTypeCD" required name="productType" 
+                            value="CD"/> CD<br/>
+                </label>
+                
+                <label class="textDVD">
+                    <input type="radio" id="productTypeDVD" required name="productType" 
+                            value="DVD"/> DVD<br/>
+                </label>
+                
+                <label class="textDownload">
+                    <input type="radio" id="productTypeDownload" required name="productType" 
+                            value="Download"/> Download
+                    <br/>
+                </label>
+            </div>
+            <!--End Of productType Class-->
+            
+            
+            <br/>
+            
+            
+            <!--Reason For Return-->
+            <div class="reasonForReturn">
+            	<label class="textRFR">Reason For Return:<br/>
+            		<textarea rows="4" cols="50" id="reasonForReturn" name="reasonForReturn"
+                    			placeholder=" " maxlength="256"
+                                onFocus="currentField()"></textarea>
+                </label>
+            </div>
+            <!--End Of Reason For Return Class-->
+            
+            
+            <br/>
+            
+            
+            <!--Agree To Terms Class-->
+            <div class="agreeToTerms">
+                <label class="textAgreeTerms">
+                    <input type="checkbox" id="agreeToTerms" required name="agreeToTerms"/>
+                    <span class="hot">*</span>Click Here To Agree To Terms And Conditions
+                </label>    
+            </div>
+            <!--End Of Agree To Terms Class-->
+            
+            
+            <br/>
+            
+            
+            <!--Submit Class-->
+            <div class="submit">
+                <label>
+                    <input type="submit" id="submitButton" name="submitButton" 
+                            value="Submit" onClick="validate()"/>
+                </label>    
+            </div>
+            <!--End Of Submit Class-->
+            
+            <!--Google recaptcha Class-->
+            <div class="g-recaptcha" data-sitekey="6LfoQg0UAAAAAH-UbgpjDK105yUSAGhj4RBiDIZb"></div>
+            <!--End Of recaptcha Class-->
+        </form>
+	</div>
+</body>
+</html>
