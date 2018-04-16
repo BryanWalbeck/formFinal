@@ -1,0 +1,283 @@
+@charset "utf-8";
+#conatiner{
+	height:900px;
+	width:675px;
+}
+
+body{
+	position:absolute;
+	height:900px;
+	width:695px;
+	border:2px solid black;
+}
+
+input{
+    padding:1px 0px 1px 0px;
+    box-sizing:border-box;
+}
+
+input:focus, textarea:focus{
+	background-color:rgba(0, 100, 200, .08);
+}
+
+/*All Fields - div Classes*/
+.pageDescription, .returnDialogue, .fullName, .addressField, .loginInfo, 
+.productType, .reasonForReturn, .agreeToTerms, .submit{
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.company{
+	background-color:rgba(55,55,55,.6);
+	border-bottom:2px solid black;
+	width:695px;
+	height:120px;
+}
+
+.llc{
+	top:10px;
+	position:absolute;
+	margin-left:135px;
+}
+
+.crystals{
+	top:10px;
+	position:absolute;
+	margin-left:10px;
+}
+
+/*Dialogue*/
+.pageDescription{
+	position:absolute;
+	top:110px;
+	left:10px;
+	background: rgba(0, 100, 200, .2);
+	width:675px;
+	height:140px;
+}
+
+/*Full Name*/
+.loginInfo{
+	position:absolute;
+    left:10px;
+    top:280px;
+    width:675px;
+}
+
+/*Address*/
+.fullName{
+	position:absolute;
+    left:10px;
+    top:330px;
+    width:675px;
+}
+
+/*User Login*/
+.addressField{
+	position:absolute;
+    left:10px;
+    top:380px;
+    width:675px;
+}
+
+.productType{
+	position:absolute;
+    left:10px;
+    top:470px;
+    width:675px;
+}
+
+.reasonForReturn{
+	position:absolute;
+    left:10px;
+    top:590px;
+    width:675px;
+}
+
+.agreeToTerms{
+	position:absolute;
+    left:10px;
+    top:740px;
+    width:675px;
+}
+
+.submit{
+	position:absolute;
+    left:440px;
+    top:790px;
+}
+
+.g-recaptcha{
+	position:absolute;
+    left:10px;
+    top:790px;
+}
+
+.hot{
+	color:#AE0002;
+	font-size:12px;
+}
+
+/*Full Name Text*/
+#firstName{
+	position:absolute;
+	float:left;
+	width:225px;
+}
+
+#middleInitial{
+	position:absolute;
+	float:float;
+	width:17px;
+}
+
+#lastName{
+	float:right;
+	width:225px;
+}
+
+/*Address Info Text*/
+#addressStreet{
+	width:226px;
+}
+
+#addressApt{
+	width:70px;
+}
+
+#addressCity{
+	float:right;
+	width:226px;
+}
+
+#addressState{
+	position:absolute;
+	float:left;
+	width:46px;
+}
+
+#addressZip{
+	position:absolute;
+	float:left;
+	width:41px;
+}
+
+/*User ID Text*/
+#email{
+	width:240px;
+	margin-left:1px;
+}
+
+#psword{
+	float:right;
+	width:240px;
+}
+
+/*Product Type Radio Buttons*/
+#productTypeBook{
+	float:left;
+}
+
+#productTypeCD{
+	float:left;
+}
+
+#productTypeDVD{
+	float:left;
+}
+
+#productTypeDownload{
+	float:left;
+}
+
+/*Reason For Return Text Area*/
+#reasonForReturn{
+	float:left;
+	width:400px;
+	height:80px;
+}
+
+/*Agree To Terms Checkbox*/
+#agreeToTerms{
+}
+
+/*Submit Button*/
+#submitButton{
+	overflow:hidden;
+	height:30px;
+	width:80px;
+}
+
+#email, #psword, #firstName, #middleInitial,
+#lastName, #addressStreet, #addressApt,
+#addressCity, #addressState,
+#addressZip, #reasonForReturn, #submitButton{
+	box-shadow:1.3px 1.3px .5px;
+}
+
+.textPswrd{
+	float:right;
+}
+
+.textLast{
+	float:right;
+}
+
+.textCity{
+	float:right;
+}
+
+.textEmail{
+	float:left;
+}
+
+.textFirst{
+	float:left;
+}
+
+.textMI{
+	float:left;
+	margin-left:230px;
+}
+
+.textStreet{
+	float:left;
+}
+
+.textApt{
+	float:left;
+	margin-left:5px;
+}
+
+.textState{
+	float:left;
+}
+
+.textZip{
+	float:left;
+	margin-left:50px;
+}
+
+.textRFR{
+	position:absolute;
+	float:left;
+}
+
+.textBook{
+	position:absolute;
+	margin-top:0px;
+}
+
+.textCD{
+	position:absolute;
+	margin-top:20px;
+}
+
+.textDVD{
+	position:absolute;
+	margin-top:40px;
+}
+
+.textDownload{
+	position:absolute;
+	margin-top:60px;
+}
