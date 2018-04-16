@@ -1,2 +1,2 @@
 # formFinal
-I created this form for a project in my first web design class.
+This is a web form project that I created in my first web design class.
